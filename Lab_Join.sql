@@ -12,6 +12,8 @@ JOIN sakila.film f ON c.film_id= f.film_id
 GROUP BY c.category_id
 ORDER BY Amount_Films ASC;
 
+SELECT * from sakila.category;
+
 SELECT c.name AS Category, COUNT(f.film_id) AS Amount_Films
 FROM sakila.category c
 JOIN sakila.film_category g ON c.category_id = g.category_id
